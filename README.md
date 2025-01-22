@@ -21,20 +21,20 @@ On CentOS/RHEL: sudo yum install curl
 # Download the Script
 Clone this repository or download the script directly:
 ```
-git clone https://gitlab.com/nima-hodhodi/disk-space-checker.git
-cd disk-space-checker
+git clone https://gitlab.com/nima-hodhodi/check-disk-alarm.git
+cd check-disk-alarm
 ```
 Alternatively, download the script using curl:
 ```
-curl -O https://gitlab.com/nima-hodhodi/disk-space-checker/raw/main/disk_space_check.sh
-chmod +x disk_space_check.sh
+curl -O https://gitlab.com/nima-hodhodi/check-disk-alarm/raw/main/check_disk.sh
+chmod +x check_disk.sh
 ```
 # Configure the Script
 The script uses hardcoded variables for configuration. Open the script in a text editor and modify the following variables as needed:
 
 # Open the script in a text editor
 ```
-nano disk_space_check.sh
+nano check_disk.sh
 ```
 # Variables to Configure:
 ```
@@ -55,7 +55,7 @@ TELEGRAM_TOKEN="your_telegram_token": The token for the Telegram bot.
 # Run the Script
 After configuring the script, you can run it manually:
 ```
-bash disk_space_check.sh
+bash check_disk.sh
 ```
 Expected Output:
 If the available disk space is below the threshold, the script will send a Telegram alert and print a warning message:
@@ -72,9 +72,9 @@ crontab -e
 ```
 Add the following line to run the script every hour:
 ```
-0 * * * * /path/to/disk_space_check.sh
+0 * * * * /path/to/check_disk.sh
 ```
-Replace /path/to/disk_space_check.sh with the full path to the script.
+Replace /path/to/check_disk.sh with the full path to the script.
 
 Save and exit the editor. The script will now run automatically at the specified interval.
 
@@ -82,7 +82,7 @@ Troubleshooting
 1. Script Doesn't Run
 Ensure the script has execute permissions:
 ```
-chmod +x disk_space_check.sh
+chmod +x check_disk.sh
 ```
 Check if curl is installed:
 ```
