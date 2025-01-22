@@ -2,7 +2,7 @@
 
 # Directly set variables inside the script
 THRESHOLD=10  # Minimum free disk space threshold in GB
-MOUNT_PATH="/var"  # Path to monitor disk space
+MOUNT_PATH="/"  # Path to monitor disk space
 SERVER_NAME="My Server"  # Server name
 SERVER_IP="192.168.1.1"  # Server IP address
 TELEGRAM_API_URL="https://example.com/telegram_bot"  # Telegram bot API URL
