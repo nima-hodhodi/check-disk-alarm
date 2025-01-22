@@ -21,12 +21,12 @@ On CentOS/RHEL: sudo yum install curl
 # Download the Script
 Clone this repository or download the script directly:
 ```
-git clone https://gitlab.com/nima-hodhodi/check-disk-alarm.git
+git clone https://github.com/nima-hodhodi/check-disk-alarm.git
 cd check-disk-alarm
 ```
 Alternatively, download the script using curl:
 ```
-curl -O https://gitlab.com/nima-hodhodi/check-disk-alarm/raw/main/check_disk.sh
+curl -O https://github.com/nima-hodhodi/check-disk-alarm/raw/main/check_disk.sh
 chmod +x check_disk.sh
 ```
 # Configure the Script
