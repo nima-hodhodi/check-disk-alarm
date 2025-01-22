@@ -1,4 +1,0 @@
-services:
-  disk-space-check:
-    image: disk-space-check
-    env_file: .env #.env for ENVIRONMENT 
