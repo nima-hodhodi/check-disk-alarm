@@ -26,6 +26,7 @@ cp .env.example .env
 3. Edit the .env file:
 Replace the placeholders with your actual values:
 
+```
 DISK_SPACE_THRESHOLD=10
 MOUNT_PATH=/var
 SERVER_NAME=My Server
@@ -33,6 +34,7 @@ SERVER_IP=192.168.1.1
 TELEGRAM_API_URL=https://example.com/telegram_bot
 TELEGRAM_CHAT_ID=your_chat_id
 TELEGRAM_TOKEN=your_telegram_token
+```
 
 4. Run the container:
 
